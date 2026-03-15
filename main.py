@@ -10,6 +10,7 @@ YDL_OPTS = {
     'no_warnings': True,
     'default_search': 'ytsearch',
     'source_address': '0.0.0.0',
+    'cookiesfrombrowser': ('firefox')
 }
 
 FFMPEG_OPTS = {
