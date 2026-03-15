@@ -5,12 +5,14 @@ import yt_dlp
 
 # yt-dlp options
 YDL_OPTS = {
-    'format': 'bestaudio/best',
+    'format': 'bestaudio[ext=webm]/bestaudio[ext=m4a]/bestaudio/best',
     'quiet': True,
     'no_warnings': True,
     'default_search': 'ytsearch',
     'source_address': '0.0.0.0',
-    'cookiesfrombrowser': ('firefox')
+    'cookiefile': 'cookies.txt',
+    'remote_components': 'ejs:github',
+    'extractor_args': {'youtube': {'js_runtimes': ['node']}},
 }
 
 FFMPEG_OPTS = {
