@@ -11,16 +11,12 @@ A simple Discord music bot powered by `yt-dlp` and `discord.py`. No Java, no Lav
 - `!queue` — Show the current queue
 - `!stop` — Stop and disconnect from voice channel
 
----
-
 ## Requirements
 
 - Python 3.10+
 - FFmpeg
 - yt-dlp (latest)
 - Node.js (required for YouTube JS challenge solving)
-
----
 
 ## Installation
 
@@ -102,14 +98,12 @@ yt-dlp --install-remote-components ejs:github
 **4. Clone and install dependencies**
 
 ```bash
-git clone https://github.com/yourname/dump-bot.git
+git clone https://github.com/snowghostcat/dump-bot.git
 cd dump-bot
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-
----
 
 ## Configuration
 
@@ -132,8 +126,6 @@ Place `cookies.txt` in the project root. Refresh it periodically when rate limit
 
 > ⚠️ Use a browser where you are logged into YouTube. Supported browsers: `chrome`, `firefox`, `edge`
 
----
-
 ## Running
 
 ```bash
@@ -145,8 +137,6 @@ python3 main.py
 python main.py
 ```
 
----
-
 ## requirements.txt
 
 ```
@@ -154,8 +144,6 @@ discord.py[voice]
 yt-dlp
 python-dotenv
 ```
-
----
 
 ## Troubleshooting
 
@@ -166,8 +154,6 @@ python-dotenv
 | `rate-limited by YouTube` | Re-export `cookies.txt` from your browser |
 | `This video is not available` | Video is region-blocked or removed, nothing to fix |
 | `Requested format is not available` | Update yt-dlp: `pip install -U yt-dlp` |
-
----
 
 ## Notes
 
